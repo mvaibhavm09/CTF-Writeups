@@ -19,6 +19,9 @@ Template engines are designed to generate web pages by combining fixed templates
   
 </aside>
 
+There are many template injection like ade, Handlebars, JsRender, PugJs and NUNJUCKS.
+
+Wait a minute what is our machine name “Nunchucks”, now we got our ans so we will use NUNJUCKS injection here. 
 
 We tried out an email like **{{9*9}}@devil.com**
 
@@ -36,6 +39,7 @@ Now we got a shell, after stabilizing the shell we will go inside ‘david’ fo
 
 Here we saw a perl file and we can the access of this file. Now we know that this machine is running perl so we make a payload.
 
+I reused the backup script, but with all of the code except the header stripped off and I changed the system command for executing reverse shell.
 ```perl
 #!/usr/bin/perl
 use POSIX qw(strftime);
